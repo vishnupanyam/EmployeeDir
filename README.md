@@ -1,6 +1,6 @@
 # EmployeeDir
 
-EmployeeDir is a mobile app built with Kotlin and Jetpack Compose that fetches and displays a list of employees from a remote JSON API. It includes features such as state management, pull-to-refresh functionality, sorting, and efficient image loading using Coil.
+EmployeeDir is a mobile app built with Kotlin and Jetpack Compose that fetches and displays a list of employees from a remote JSON API. It includes features such as state management, refresh functionality, sorting, and efficient image loading using Coil.
 
 ## Build Tools & Versions Used
 - **Kotlin**: 1.5+
@@ -20,7 +20,7 @@ EmployeeDir is a mobile app built with Kotlin and Jetpack Compose that fetches a
 I focused on implementing the following key features:
 - **State Management**: Handling different states (loading, success, error, and empty) to ensure the app responds dynamically to various conditions.
 - **Efficient Image Loading**: Using Coil to handle image loading, caching, and error handling to minimize network bandwidth usage.
-- **Pull-to-Refresh and Sorting**: Allowing users to refresh the employee list and toggle sorting between names and teams.
+- **Refresh and Sorting**: Allowing users to refresh the employee list and toggle sorting between names and teams.
 - **Error Handling**: Providing feedback to users when the API fails, or the list is empty.
 
 ## What Was the Reason for Your Focus? What Problems Were You Trying to Solve?
