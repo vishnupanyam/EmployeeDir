@@ -4,14 +4,17 @@ name: Android CI
 on:
   push:
     branches:
-      - main
+     - main
   pull_request:
     branches:
       - main
       - 'feature/**'
+  issue_comment:
+    types: [created]
 
 jobs:
   build:
+    if: github.event.issue.pull_request != null && contains(github.event.comment.body, '@pr_build')
     runs-on: ubuntu-latest
 
     steps:
