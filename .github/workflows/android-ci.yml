@@ -16,9 +16,7 @@ jobs:
   build:
     if: github.event.issue.pull_request != null && contains(github.event.comment.body, '@pr_build')
     runs-on: ubuntu-latest
-
     steps:
-      # Step 1: Check out the code
       - name: Checkout code
         uses: actions/checkout@v4
 
